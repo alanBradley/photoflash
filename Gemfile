@@ -32,6 +32,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# gems for image management
+
+# for file upload management
+gem 'carrierwave', '~> 0.10.0'
+# for controlling file upload sizes dynamicly
+gem 'mini_magick', '~> 4.2.4'
+# for connecting to amazon web services cdm api
+gem 'fog', '~> 1.30.0'
+# for protecting environment variables with git hub. helps hide API keys etc.
+gem 'figaro', '~> 1.1.1'
+# for unified language
+gem 'unf', '~> 0.1.4'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
